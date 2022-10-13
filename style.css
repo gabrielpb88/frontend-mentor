@@ -1,5 +1,5 @@
 body {
-    background: #D5E1EF ;
+    background: hsl(212, 45%, 89%);
 }
 
 main {
@@ -20,24 +20,24 @@ img {
     justify-content: center;
     align-items: center;
     padding: 12px;
-    background: #ffffff;
+    background: hsl(0, 0%, 100%);
     border-radius: 12px;
     width: 196px;
 }
 
 .text-container {
     padding: 16px 0;
-    font-family: sans-serif;
+    font-family: 'Outfit', sans-serif;
     text-align: center;
 }
 
 .text-header {
-    font-size: 0.9rem;
-    font-weight: bold;
+    font-size: 15px;
+    font-weight: 700;
 }
 
 .text-content {
     padding-top: 16px;
-    color: #828284;
+    color: hsl(220, 15%, 55%);
     font-size: 0.7rem;
 }
