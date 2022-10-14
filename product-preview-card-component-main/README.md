@@ -33,8 +33,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Repository](https://github.com/gabrielpb88/frontendmentor/tree/product-preview-card)
+- Live Site URL: [Live URL](https://gabrielpb88.github.io/frontendmentor/product-preview-card-component-main)
 
 ## My process
 
