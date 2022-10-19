@@ -44,6 +44,10 @@ header img {
     border-radius: 16px;
 }
 
+.content {
+    width: 100%;
+}
+
 h1 {
     font-size: 22px;
     color: var(--white);
