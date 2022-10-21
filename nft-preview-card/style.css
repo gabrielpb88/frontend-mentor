@@ -58,7 +58,7 @@ header {
     background-color: var(--cyan);
 }
 
-.header-view-icon:active {
+.header-view-icon:hover {
     opacity: 0.5;
 }
 
@@ -150,10 +150,10 @@ p {
     cursor: pointer;
 }
 
-h1:active {
+h1:hover {
     color: var(--cyan);
 }
 
-.footer-creator:active {
+.footer-creator:hover {
     color: var(--cyan);
 }
