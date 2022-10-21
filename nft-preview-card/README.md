@@ -30,8 +30,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/gabrielpb88/frontendmentor/tree/nft-preview-card)
-- Live Site URL: [Add live site URL here](gabrielpb88.github.io/frontendmentor/nft-preview-card)
+- Solution URL: [Repository](https://github.com/gabrielpb88/frontendmentor/tree/nft-preview-card)
+- Live Site URL: [Live URL](https://gabrielpb88.github.io/frontendmentor/nft-preview-card)
 
 ## My process
 
