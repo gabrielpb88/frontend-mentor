@@ -31,9 +31,9 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
-
+- Solution URL: [Repository](https://github.com/gabrielpb88/frontendmentor/tree/time-tracking-dashboard-component)
+- Live Site URL: [Live Url](https://gabrielpb88.github.io/time-tracking-dashboard-component)
+  
 ## My process
 
 ### Built with
