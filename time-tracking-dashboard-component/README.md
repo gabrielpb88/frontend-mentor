@@ -11,7 +11,6 @@ This is a solution to the [Time tracking dashboard challenge on Frontend Mentor]
 - [My process](#my-process)
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
-  - [Continued development](#continued-development)
 - [Author](#author)
 
 
@@ -36,7 +35,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Repository](https://github.com/gabrielpb88/frontendmentor/tree/time-tracking-dashboard-component)
-- Live Site URL: [Live Url](https://gabrielpb88.github.io/time-tracking-dashboard-component)
+- Live Site URL: [Live Url](https://gabrielpb88.github.io/frontendmentor/time-tracking-dashboard-component)
   
 ## My process
 
