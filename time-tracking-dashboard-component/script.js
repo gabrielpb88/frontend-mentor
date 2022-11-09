@@ -9,6 +9,8 @@ menu.forEach((element) => {
 fetch('./data.json')
     .then(async (response) => {
         data = await response.json();
+        menuItemActive = "weekly"
+        updatePeriods();
     })
 
 function onMenuChange(event) {
