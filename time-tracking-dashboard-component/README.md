@@ -27,7 +27,11 @@ Users should be able to:
 
 ### Screenshot
 
+#### Mobile layout:
 ![](./screenshots/img.png)
+
+#### Desktop layout:
+![img.png](./screenshots/img-desktop.png)
 
 ### Links
 
