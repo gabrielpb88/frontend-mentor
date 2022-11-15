@@ -28,7 +28,7 @@
         <div class="tip active">15%</div>
         <div class="tip">25%</div>
         <div class="tip">50%</div>
-        <input class="input-tip" type="text" placeholder="Custom">
+        <input id="input-tip" class="input-tip" type="text" placeholder="Custom">
       </div>
 
       <label class="label-people-input" for="number-of-people">Number of People</label>
@@ -42,10 +42,10 @@
     <section class="result-card">
       <div class="result-card--content">
         <div>
-          <p>Amount</p>
+          <p>Tip Amount</p>
           <p>/ person</p>
         </div>
-        <span class="result-card--price">4.27</span>
+        <span id="amount-person" class="result-card--price">0.00</span>
       </div>
     
       <div class="result-card--content">
@@ -53,10 +53,10 @@
           <p>Total</p>
           <p>/ person</p>
         </div>
-        <span class="result-card--price">32.79</span>
+        <span id="amount-total" class="result-card--price">0.00</span>
       </div>
 
-      <button id="reset" class="btn-reset">Reset</button>
+      <button id="btn-reset" class="btn-reset">Reset</button>
     </section>
   </main>
 
