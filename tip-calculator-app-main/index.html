@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="styles/style.css">
+  <title>Frontend Mentor | Tip calculator app</title>
+</head>
+<body>
+  <header>
+    <img src="images/logo.svg" alt="Logo">
+  </header>
+  <main>
+    <section class="main-section">
+      <div class="bill-wrapper">
+        <label class="bill" for="bill-value">Bill</label>
+        <div class="input-wrapper">
+          <input id="bill-value" type="text">
+          <img src="images/icon-dollar.svg" alt="Dollar Icon">
+        </div>
+      </div>
+      <p>Select Tip %</p>
+      <div class="tips-wrapper">
+        <div class="tip">5%</div>
+        <div class="tip">10%</div>
+        <div class="tip active">15%</div>
+        <div class="tip">25%</div>
+        <div class="tip">50%</div>
+        <input class="input-tip" type="text" placeholder="Custom">
+      </div>
+
+      <label class="label-people-input" for="number-of-people">Number of People</label>
+      
+      <div class="input-wrapper">
+        <input id="number-of-people" type="text" placeholder="5">
+        <img src="images/icon-person.svg" alt="Person Icon">
+      </div>
+    
+    </section>
+    <section class="result-card">
+      <div class="result-card--content">
+        <div>
+          <p>Amount</p>
+          <p>/ person</p>
+        </div>
+        <span class="result-card--price">4.27</span>
+      </div>
+    
+      <div class="result-card--content">
+        <div>
+          <p>Total</p>
+          <p>/ person</p>
+        </div>
+        <span class="result-card--price">32.79</span>
+      </div>
+
+      <button id="reset" class="btn-reset">Reset</button>
+    </section>
+  </main>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
