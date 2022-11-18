@@ -69,8 +69,8 @@ function reset(){
 
 function updateUI(){
   const obj = calculateTip(billValue, tipPercentage, numberOfPeopleValue, customTip);
-  amountPerson.textContent = obj.valuePerPerson.toFixed(2);
-  amountTotal.textContent = obj.total.toFixed(2);
+  amountPerson.textContent = `$${obj.valuePerPerson.toFixed(2)}`;
+  amountTotal.textContent = `$${obj.total.toFixed(2)}`;
 }
 
 function calculateTip(bill, tipPercentage, peopleAmount, customTip) {

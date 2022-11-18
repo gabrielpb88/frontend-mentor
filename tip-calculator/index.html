@@ -17,7 +17,7 @@
       <div class="bill-wrapper">
         <label class="bill" for="bill-value">Bill</label>
         <div class="input-wrapper">
-          <input id="bill-value" type="number">
+          <input id="bill-value" type="text">
           <img src="images/icon-dollar.svg" alt="Dollar Icon">
         </div>
       </div>
@@ -28,7 +28,7 @@
         <div class="tip active">15%</div>
         <div class="tip">25%</div>
         <div class="tip">50%</div>
-        <input id="input-tip" class="input-tip" type="number" placeholder="Custom">
+        <input id="input-tip" class="input-tip" type="text" placeholder="Custom">
       </div>
 
       <div class="label-people">
@@ -36,7 +36,7 @@
         <span id="label-people-error-msg" class="label-people-error-msg" hidden>Can't be zero</span>
       </div>
       <div class="input-wrapper">
-        <input id="number-of-people" type="number" placeholder="5" min=1>
+        <input id="number-of-people" type="number" placeholder="5" min="1">
         <img src="images/icon-person.svg" alt="Person Icon">
       </div>
     
@@ -47,7 +47,7 @@
           <p>Tip Amount</p>
           <p>/ person</p>
         </div>
-        <span id="amount-person" class="result-card--price">0.00</span>
+        <span id="amount-person" class="result-card--price">$0.00</span>
       </div>
     
       <div class="result-card--content">
@@ -55,7 +55,7 @@
           <p>Total</p>
           <p>/ person</p>
         </div>
-        <span id="amount-total" class="result-card--price">0.00</span>
+        <span id="amount-total" class="result-card--price">$0.00</span>
       </div>
 
       <button id="btn-reset" class="btn-reset" disabled>Reset</button>
