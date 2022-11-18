@@ -31,8 +31,10 @@
         <input id="input-tip" class="input-tip" type="text" placeholder="Custom">
       </div>
 
-      <label class="label-people-input" for="number-of-people">Number of People</label>
-      
+      <div class="label-people">
+        <label class="label-people-input" for="number-of-people">Number of People</label>
+        <span id="label-people-error-msg" class="label-people-error-msg" hidden>Can't be zero</span>
+      </div>
       <div class="input-wrapper">
         <input id="number-of-people" type="text" placeholder="5">
         <img src="images/icon-person.svg" alt="Person Icon">

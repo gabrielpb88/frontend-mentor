@@ -109,7 +109,7 @@ main {
     width: 48%;
     margin-top: 0.8rem;
     padding: 0.5rem;
-
+    cursor: pointer;
   }
 
   .active {
@@ -135,6 +135,16 @@ main {
       outline: none;
       border: 2px solid var(--dark-grayish-cyan);
     }
+  }
+}
+
+.label-people {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+
+  .label-people-error-msg {
+    color: #E17457;
   }
 }
 
@@ -182,6 +192,8 @@ main {
     color: var(--very-dark-cyan);
     text-transform: uppercase;
     font-size: 1.2rem;
+
+    cursor: pointer;
   }
 }
 

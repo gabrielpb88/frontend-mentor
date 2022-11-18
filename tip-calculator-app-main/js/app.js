@@ -1,6 +1,7 @@
 const billInputElement = document.getElementById('bill-value')
 const customInputElement = document.getElementById('input-tip')
 const numberOfPeopleElement = document.getElementById('number-of-people')
+const labelPeopleErrorMsgElement = document.getElementById('label-people-error-msg')
 const amountPerson = document.getElementById('amount-person')
 const amountTotal = document.getElementById('amount-total')
 const tipElements = document.querySelectorAll('.tip')
@@ -30,8 +31,13 @@ customInputElement.addEventListener('input', (event) => {
 })
 
 numberOfPeopleElement.addEventListener('input', (event) => {
-  numberOfPeopleValue = event.target.value;
-  updateUI()
+  numberOfPeopleValue = parseInt(event.target.value);
+  if(!numberOfPeopleValue || numberOfPeopleElement < 1){
+    labelPeopleErrorMsgElement.hidden = false;
+  } else {
+    labelPeopleErrorMsgElement.hidden = true;
+    updateUI()
+  }
 })
 
 tipElements.forEach(element => {
@@ -54,8 +60,8 @@ btnResetElement.addEventListener('click', () => {
 function reset(){
   numberOfPeopleElement.value = "";
   billInputElement.value = "";
-  amountPerson.textContent = 0;
-  amountTotal.textContent = 0;
+  amountPerson.textContent = "0.00";
+  amountTotal.textContent = "0.00";
 }
 
 function updateUI(){
@@ -78,5 +84,9 @@ function calculateTip(bill, tipPercentage, peopleAmount, customTip) {
       valuePerPerson: (bill * tipPercentage / 100) / peopleAmount,
       total: (bill * (1 + (tipPercentage / 100))) / peopleAmount
     }
+  }
+  return {
+    valuePerPerson: 0,
+    total: 0
   }
 }
