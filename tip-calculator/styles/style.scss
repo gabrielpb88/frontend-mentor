@@ -22,7 +22,6 @@
 body {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
   min-height: 100vh;
 
@@ -165,10 +164,11 @@ main {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
     padding-bottom: 16px;
 
-    span {
-      font-size: 2rem;
+    .result-card--price {
+      font-size: 3rem;
       color: var(--active-color)
     }
   }
@@ -222,8 +222,22 @@ main {
       margin: 16px;
     }
 
+    .main-section {
+      justify-content: space-between;
+    }
+
     .result-card {
       margin-top: 8px;
+    }
+
+    .tips-wrapper {
+      .tip {
+        width: 31%;
+      }
+
+      .input-tip {
+        width: 31%;
+      }
     }
   }
 }

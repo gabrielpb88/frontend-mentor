@@ -21,7 +21,6 @@
 body {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
   min-height: 100vh;
   background-color: var(--bg-color);
@@ -145,10 +144,11 @@ main {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
   padding-bottom: 16px;
 }
-.result-card .result-card--content span {
-  font-size: 2rem;
+.result-card .result-card--content .result-card--price {
+  font-size: 3rem;
   color: var(--active-color);
 }
 .result-card .result-card--content div {
@@ -192,8 +192,17 @@ main {
     width: 50%;
     margin: 16px;
   }
+  main .main-section {
+    justify-content: space-between;
+  }
   main .result-card {
     margin-top: 8px;
+  }
+  main .tips-wrapper .tip {
+    width: 31%;
+  }
+  main .tips-wrapper .input-tip {
+    width: 31%;
   }
 }
 
