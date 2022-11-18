@@ -20,6 +20,7 @@ let numberOfPeopleValue = TIP_DEFAULT_NUMBER_OF_PEOPLE;
 billInputElement.addEventListener('input', (event) => {
   billValue = parseFloat(event.target.value);
   updateUI();
+  disableResetButton();
 })
 
 customInputElement.addEventListener('input', (event) => {
@@ -36,8 +37,9 @@ numberOfPeopleElement.addEventListener('input', (event) => {
     labelPeopleErrorMsgElement.hidden = false;
   } else {
     labelPeopleErrorMsgElement.hidden = true;
-    updateUI()
+    updateUI();
   }
+  disableResetButton();
 })
 
 tipElements.forEach(element => {
@@ -62,6 +64,7 @@ function reset(){
   billInputElement.value = "";
   amountPerson.textContent = "0.00";
   amountTotal.textContent = "0.00";
+  disableResetButton();
 }
 
 function updateUI(){
@@ -88,5 +91,13 @@ function calculateTip(bill, tipPercentage, peopleAmount, customTip) {
   return {
     valuePerPerson: 0,
     total: 0
+  }
+}
+
+function disableResetButton() {
+  if(!billInputElement.value || !numberOfPeopleElement.value){
+    btnResetElement.disabled = true;
+  } else {
+    btnResetElement.disabled = false;
   }
 }

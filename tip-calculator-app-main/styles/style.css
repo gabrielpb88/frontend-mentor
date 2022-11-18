@@ -170,6 +170,10 @@ main {
   font-size: 1.2rem;
   cursor: pointer;
 }
+.result-card .btn-reset:disabled {
+  background-color: #0D686D;
+  color: #00474B;
+}
 
 @media (min-width: 1024px) {
   header {
