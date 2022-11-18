@@ -24,14 +24,13 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  min-height: 100vh;
 
   background-color: var(--bg-color);
 }
 
 header {
-  height: 20%;
   img {
-    margin-top: 3rem;
     height: 3rem;
   }
 }
@@ -84,6 +83,10 @@ main {
     &:focus {
       outline: none;
       border: 2px solid var(--dark-grayish-cyan);
+    }
+
+    &:invalid {
+      border: 2px solid #E17457;
     }
   }
   

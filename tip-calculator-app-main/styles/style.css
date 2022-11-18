@@ -23,14 +23,11 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  min-height: 100vh;
   background-color: var(--bg-color);
 }
 
-header {
-  height: 20%;
-}
 header img {
-  margin-top: 3rem;
   height: 3rem;
 }
 
@@ -77,6 +74,9 @@ main {
 .input-wrapper input:focus {
   outline: none;
   border: 2px solid var(--dark-grayish-cyan);
+}
+.input-wrapper input:invalid {
+  border: 2px solid #E17457;
 }
 .input-wrapper img {
   position: absolute;

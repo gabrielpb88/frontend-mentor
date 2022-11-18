@@ -17,7 +17,7 @@
       <div class="bill-wrapper">
         <label class="bill" for="bill-value">Bill</label>
         <div class="input-wrapper">
-          <input id="bill-value" type="text">
+          <input id="bill-value" type="number">
           <img src="images/icon-dollar.svg" alt="Dollar Icon">
         </div>
       </div>
@@ -28,7 +28,7 @@
         <div class="tip active">15%</div>
         <div class="tip">25%</div>
         <div class="tip">50%</div>
-        <input id="input-tip" class="input-tip" type="text" placeholder="Custom">
+        <input id="input-tip" class="input-tip" type="number" placeholder="Custom">
       </div>
 
       <div class="label-people">
@@ -36,7 +36,7 @@
         <span id="label-people-error-msg" class="label-people-error-msg" hidden>Can't be zero</span>
       </div>
       <div class="input-wrapper">
-        <input id="number-of-people" type="text" placeholder="5">
+        <input id="number-of-people" type="number" placeholder="5" min=1>
         <img src="images/icon-person.svg" alt="Person Icon">
       </div>
     
