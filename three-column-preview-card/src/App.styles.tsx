@@ -1,10 +1,11 @@
 import styled from 'styled-components';
 
+const lightGray = 'hsl(0, 0%, 95%)';
 export const AppWrapper = styled.div`
   background-color: white;
   display: grid;
-  grid-template-areas: 'sedanCar' 'suvCar' 'luxuryCar';
   place-items: center;
+  height: 100vh;
 `;
 
 export const CardWrapper = styled.div`
@@ -12,29 +13,51 @@ export const CardWrapper = styled.div`
   flex-direction: column;
   justify-content: space-around;
   padding: 2rem 3.2rem;
-  min-height: 400px;
-  max-width: calc(100vw - 4rem);
+  min-height: 500px;
+  width: calc(100vw - 4rem);
+  max-width: 768px;
+
+  @media screen and (min-width: 1024px) {
+    width: 350px;
+    height: 600px;
+  }
 `;
 
 export const SedanCarCard = styled(CardWrapper)`
   border-radius: 1rem 1rem 0 0;
 
-  grid-area: sedanCar;
   background-color: hsl(31, 77%, 52%);
   color: hsl(31, 77%, 52%);
+
+  @media screen and (min-width: 1024px) {
+    grid-row: 1 / 1;
+    grid-column: 1 / 1;
+
+    border-radius: 1rem 0 0 1rem;
+  }
 `;
 
 export const SuvCarCard = styled(CardWrapper)`
-  grid-area: suvCar;
   background-color: hsl(184, 100%, 22%);
   color: hsl(184, 100%, 22%);
+
+  @media screen and (min-width: 1024px) {
+    grid-row: 1 / 1;
+    grid-column: 2 / 2;
+  }
 `;
 
 export const LuxuryCarCard = styled(CardWrapper)`
-  grid-area: luxuryCar;
   background-color: hsl(179, 100%, 13%);
   color: hsl(179, 100%, 13%);
   border-radius: 0 0 1rem 1rem;
+
+  @media screen and (min-width: 1024px) {
+    grid-row: 1 / 1;
+    grid-column: 3 / 3;
+
+    border-radius: 0 1rem 1rem 0;
+  }
 `;
 
 export const Image = styled.img`
@@ -44,12 +67,16 @@ export const Image = styled.img`
 export const Header = styled.h2`
   font-size: 2.5rem;
   font-family: 'Big Shoulders Display', cursive;
-  color: white;
+  color: ${lightGray};
   text-transform: uppercase;
 `;
 
 export const Description = styled.p`
-  color: white;
+  color: hsla(0, 0%, 100%, 0.75);
+
+  @media screen and (min-width: 1024px) {
+    font-size: 1.2rem;
+  }
 `;
 
 export const Button = styled.a`
@@ -57,7 +84,7 @@ export const Button = styled.a`
   padding: 1rem;
   border: 2px solid white;
   border-radius: 2rem;
-  background-color: white;
+  background-color: ${lightGray};
   color: inherit;
 
   width: 70%;
@@ -67,8 +94,17 @@ export const Button = styled.a`
     background-color: transparent;
     color: white;
   }
+
+  @media screen and (min-width: 1024px) {
+    margin-top: 6rem;
+  }
 `;
 
 export const CardsWrapper = styled.div`
   padding: 2rem;
+
+  @media screen and (min-width: 1024px) {
+    display: grid;
+    grid-template-columns: auto auto auto;
+  }
 `;
