@@ -1,12 +1,9 @@
 body {
     background: hsl(212, 45%, 89%);
-}
-
-main {
     display: flex;
     justify-content: center;
     align-content: center;
-    align-items: center;1
+    align-items: center;
     height: 100vh;
 }
 

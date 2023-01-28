@@ -3,26 +3,35 @@ import { data } from './data.js'
 loadData()
 
 function loadData() {
-    data.forEach( item => {
-        createCard(item)
-    })
+  data.forEach( item => {
+    addCards(item);
+  })
 }
 
-function createCard(item) {
-    const tbody = document.getElementById("tbody")
-    const url = `./${item.name}`
-    const repo = `https://github.com/gabrielpb88/frontendmentor/tree/main/${item.name}`
 
-    const cardHTML = `
-      <tr>
-        <td>
-          <a href="${url}">${item.title}</a>           
-        </td>
-        <td>
-          <a href="${repo}">Github repo</a>
-        </td>
-      </tr>
-  `;
+function addCards(challenge) {
+  const ul = document.querySelector('#challenges-list');
+  const li = document.createElement('li');
+  const article = document.createElement('article')
+  const anchorLiveUrl = document.createElement('a');
+  const anchorRepository = document.createElement('a');
+  const img = document.createElement('img');
 
-    tbody.insertAdjacentHTML("beforeend", cardHTML);
+  img.src = challenge.imageUrl;
+  img.alt = challenge.title;
+
+  anchorLiveUrl.href = challenge.liveUrl;
+  anchorLiveUrl.classList.add('liveUrl');
+  anchorLiveUrl.textContent = challenge.title;
+
+  anchorRepository.href = challenge.repositoryUrl;
+  anchorRepository.classList.add('repository');
+  anchorRepository.textContent = 'Repository';
+
+  li.append(img);
+  li.append(article);
+  article.append(anchorLiveUrl);
+  article.append(anchorRepository);
+
+  ul.append(li);
 }
